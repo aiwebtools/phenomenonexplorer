@@ -24,6 +24,16 @@ const Hero: React.FC = () => {
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
         <div className={`max-w-4xl mx-auto text-center opacity-0 transform translate-y-10 ${isVisible ? 'opacity-100 translate-y-0' : ''} transition-all duration-1000 delay-300`}>
+          {/* UFO Image */}
+          <div className="relative mb-8 max-w-2xl mx-auto">
+            <img 
+              src="https://img1.wsimg.com/isteam/ip/9fd6d942-5b46-4025-92e2-0f1ec2a7adf2/a-photo-of-a-ufo-hovering-in-the-sky-wit_w8l4l.png/:/cr=t:5.43%25,l:0%25,w:100%25,h:89.13%25/rs=w:1200,h:600,cg:true" 
+              alt="UFO hovering in the night sky" 
+              className="rounded-2xl border border-white/10 shadow-neon-cyan w-full max-h-[300px] object-cover object-center"
+            />
+            <div className="absolute inset-0 rounded-2xl border border-neon-cyan/20 shadow-neon-cyan opacity-50"></div>
+          </div>
+          
           {/* Tag line */}
           <div className="inline-block mb-6 py-1 px-3 bg-white/5 backdrop-blur-sm rounded-full border border-white/10">
             <span className="text-sm text-gradient-rainbow font-medium">Unveil the unexplained with AI precision</span>

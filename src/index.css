@@ -119,6 +119,10 @@
   .text-gradient-rainbow {
     @apply bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-magenta bg-clip-text text-transparent;
   }
+  
+  .text-shadow-glow {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
 }
 
 #root {

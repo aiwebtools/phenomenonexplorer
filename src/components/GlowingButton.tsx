@@ -61,6 +61,7 @@ const GlowingButton: React.FC<GlowingButtonProps> = ({
       styles.text,
       styles.hover,
       isHovered && styles.shadow,
+      "font-medium tracking-wide text-shadow-glow uppercase text-sm md:text-base",
       className
     ),
     onMouseEnter: () => setIsHovered(true),
