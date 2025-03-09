@@ -77,8 +77,8 @@ const Hero: React.FC = () => {
               color="cyan">
               Start Exploring
             </GlowingButton>
-            <GlowingButton href="#tools" color="magenta">
-              View AI Tools
+            <GlowingButton href="https://aiwebtools.ai" color="magenta">
+              View All AIWEBTOOLS AI TOOLS
             </GlowingButton>
           </div>
         </div>
