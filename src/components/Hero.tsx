@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
   ];
   
   return (
-    <section className="min-h-screen relative flex flex-col justify-center items-center pt-24 pb-16 overflow-hidden">
+    <section className="min-h-screen relative flex flex-col justify-center items-center pt-24 pb-16 overflow-visible">
       {/* 3D floating orb */}
       <div className={`absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[500px] h-[500px] opacity-0 ${isVisible ? 'opacity-100' : ''} transition-opacity duration-1000`}>
         <div className="absolute inset-0 rounded-full bg-gradient-to-r from-neon-cyan via-neon-magenta to-neon-purple opacity-10 blur-3xl animate-pulse"></div>
@@ -70,7 +70,7 @@ const Hero: React.FC = () => {
           </p>
           
           {/* Button group */}
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-4 relative z-20">
             <GlowingButton 
               dropdown={true} 
               dropdownItems={toolItems} 
