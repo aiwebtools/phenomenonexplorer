@@ -1,0 +1,66 @@
+
+import React, { useState, useEffect } from 'react';
+import GlowingButton from './GlowingButton';
+
+const Hero: React.FC = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+  
+  return (
+    <section className="min-h-screen relative flex flex-col justify-center items-center pt-24 pb-16 overflow-hidden">
+      {/* 3D floating orb */}
+      <div className={`absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[500px] h-[500px] opacity-0 ${isVisible ? 'opacity-100' : ''} transition-opacity duration-1000`}>
+        <div className="absolute inset-0 rounded-full bg-gradient-to-r from-neon-cyan via-neon-magenta to-neon-purple opacity-10 blur-3xl animate-pulse"></div>
+      </div>
+      
+      {/* Floating elements */}
+      <div className="absolute top-1/3 left-1/4 w-16 h-16 rounded-full border border-neon-cyan opacity-20 animate-float"></div>
+      <div className="absolute bottom-1/3 right-1/4 w-24 h-24 rounded-full border border-neon-magenta opacity-20 animate-float" style={{ animationDelay: '1s' }}></div>
+      <div className="absolute top-2/3 left-1/3 w-20 h-20 rounded-full border border-neon-purple opacity-20 animate-float" style={{ animationDelay: '2s' }}></div>
+      
+      {/* Content */}
+      <div className="container mx-auto px-4 relative z-10">
+        <div className={`max-w-4xl mx-auto text-center opacity-0 transform translate-y-10 ${isVisible ? 'opacity-100 translate-y-0' : ''} transition-all duration-1000 delay-300`}>
+          {/* Tag line */}
+          <div className="inline-block mb-6 py-1 px-3 bg-white/5 backdrop-blur-sm rounded-full border border-white/10">
+            <span className="text-sm text-gradient-rainbow font-medium">Unveil the unexplained with AI precision</span>
+          </div>
+          
+          {/* Title */}
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight">
+            <span className="block">Phenomenon Explorer</span>
+            <span className="text-gradient-rainbow">AI Suite</span>
+          </h1>
+          
+          {/* Description */}
+          <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+            Harness the power of specialized AI to investigate the unexplained - from UFO encounters to supernatural phenomena, cryptozoology to ghost hunting.
+          </p>
+          
+          {/* Button group */}
+          <div className="flex flex-wrap justify-center gap-4">
+            <GlowingButton href="https://chatgpt.com/g/g-67cdc7fe2fdc8191bf47c5e4ec78528b-ufo-investigation-gpt" color="cyan">
+              Start Exploring
+            </GlowingButton>
+            <GlowingButton href="#tools" color="magenta">
+              View AI Tools
+            </GlowingButton>
+          </div>
+        </div>
+      </div>
+      
+      {/* Scroll indicator */}
+      <div className={`absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center opacity-0 ${isVisible ? 'opacity-100' : ''} transition-opacity duration-1000 delay-1000`}>
+        <p className="text-sm text-gray-400 mb-2">Scroll to explore</p>
+        <div className="w-6 h-10 rounded-full border border-gray-500 flex justify-center p-1">
+          <div className="w-1 h-2 bg-white rounded-full animate-[float_1.5s_ease-in-out_infinite]"></div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
