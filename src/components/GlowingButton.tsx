@@ -115,13 +115,15 @@ const GlowingButton: React.FC<GlowingButtonProps> = ({
         </button>
         
         {isDropdownOpen && (
-          <div className="absolute z-50 mt-2 w-64 rounded-xl border backdrop-blur-xl bg-black/50 border-white/10 shadow-lg shadow-neon-cyan/30 overflow-hidden">
+          <div className="absolute z-50 mt-2 w-64 rounded-xl border backdrop-blur-xl bg-black/80 border-white/10 shadow-lg shadow-neon-cyan/30 overflow-hidden">
             <div className="py-1">
               {dropdownItems.map((item, index) => (
                 <a
                   key={index}
                   href={item.url}
-                  className={`flex items-center px-4 py-3 hover:bg-white/10 ${styles.text} transition-colors duration-200`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`block flex items-center px-4 py-3 hover:bg-white/10 ${styles.text} transition-colors duration-200`}
                 >
                   <span>{item.label}</span>
                 </a>
@@ -136,7 +138,7 @@ const GlowingButton: React.FC<GlowingButtonProps> = ({
   // Render either a button or an anchor for non-dropdown
   if (href) {
     return (
-      <a href={href} {...buttonProps}>
+      <a href={href} target="_blank" rel="noopener noreferrer" {...buttonProps}>
         {isHovered && (
           <span className="absolute inset-0 flex items-center justify-center">
             <span className="absolute w-8 h-8 rounded-full bg-white/20 animate-ripple"></span>
