@@ -9,6 +9,25 @@ const Hero: React.FC = () => {
     setIsVisible(true);
   }, []);
   
+  const toolItems = [
+    { 
+      label: "UFO Investigation GPT", 
+      url: "https://chatgpt.com/g/g-67cdc7fe2fdc8191bf47c5e4ec78528b-ufo-investigation-gpt" 
+    },
+    { 
+      label: "Supernatural Myths GPT", 
+      url: "https://chatgpt.com/g/g-67cdc3f657648191b1865eb62651d278-supernatural-myths-gpt" 
+    },
+    { 
+      label: "Cryptozoology Report GPT", 
+      url: "https://chatgpt.com/g/g-67cdbfacd8a481918cb2f50a0aabd34a-cryptozoology-report-gpt" 
+    },
+    { 
+      label: "Ghost Hunting GPT 👻", 
+      url: "https://chatgpt.com/g/g-67cdbca3ed408191b888c9c93a23776a-ghost-hunting-gpt" 
+    },
+  ];
+  
   return (
     <section className="min-h-screen relative flex flex-col justify-center items-center pt-24 pb-16 overflow-hidden">
       {/* 3D floating orb */}
@@ -52,7 +71,10 @@ const Hero: React.FC = () => {
           
           {/* Button group */}
           <div className="flex flex-wrap justify-center gap-4">
-            <GlowingButton href="https://chatgpt.com/g/g-67cdc7fe2fdc8191bf47c5e4ec78528b-ufo-investigation-gpt" color="cyan">
+            <GlowingButton 
+              dropdown={true} 
+              dropdownItems={toolItems} 
+              color="cyan">
               Start Exploring
             </GlowingButton>
             <GlowingButton href="#tools" color="magenta">
