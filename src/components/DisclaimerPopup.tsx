@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { X } from 'lucide-react';
 import { toast } from '@/hooks/use-toast';
 
@@ -9,19 +9,19 @@ interface DisclaimerPopupProps {
 
 const DisclaimerPopup: React.FC<DisclaimerPopupProps> = ({ onAgree }) => {
   return (
-    <div className="fixed inset-0 bg-black/80 backdrop-blur-md z-[200] flex items-center justify-center p-4 animate-in fade-in-0">
-      <div className="glass-morphism w-full max-w-2xl rounded-2xl p-6 shadow-xl shadow-neon-cyan/20 border border-neon-cyan/30 relative max-h-[90vh] overflow-y-auto">
+    <div className="fixed inset-0 bg-black/80 backdrop-blur-md z-[200] flex items-center justify-center p-4 animate-in fade-in-0 overflow-y-auto">
+      <div className="glass-morphism w-full max-w-[90%] sm:max-w-md md:max-w-lg lg:max-w-2xl rounded-2xl p-4 sm:p-6 shadow-xl shadow-neon-cyan/20 border border-neon-cyan/30 relative max-h-[90vh] overflow-y-auto">
         <button 
-          onClick={() => {}} 
-          className="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors"
+          onClick={onAgree} 
+          className="absolute top-2 right-2 sm:top-4 sm:right-4 text-gray-400 hover:text-white transition-colors"
           aria-label="Close"
         >
           <X size={20} />
         </button>
         
-        <h2 className="text-2xl font-bold mb-4 text-gradient-rainbow">Important Disclaimer</h2>
+        <h2 className="text-xl sm:text-2xl font-bold mb-4 text-gradient-rainbow">Important Disclaimer</h2>
         
-        <div className="space-y-4 text-gray-300 mb-6 text-sm md:text-base">
+        <div className="space-y-3 sm:space-y-4 text-gray-300 mb-4 sm:mb-6 text-xs sm:text-sm md:text-base">
           <p>
             The Phenomenon Explorer AI Suite, including all its associated tools, is provided strictly for <span className="text-neon-cyan font-medium">educational, entertainment, and research purposes only</span>.
           </p>
@@ -49,7 +49,7 @@ const DisclaimerPopup: React.FC<DisclaimerPopupProps> = ({ onAgree }) => {
                 duration: 3000,
               });
             }}
-            className="px-8 py-3 rounded-full bg-gradient-to-r from-neon-cyan to-neon-magenta text-white font-medium shadow-lg shadow-neon-magenta/20 hover:shadow-neon-magenta/40 transition-all duration-300 hover:scale-105"
+            className="px-6 sm:px-8 py-2 sm:py-3 rounded-full bg-gradient-to-r from-neon-cyan to-neon-magenta text-white font-medium shadow-lg shadow-neon-magenta/20 hover:shadow-neon-magenta/40 transition-all duration-300 hover:scale-105 text-sm sm:text-base"
           >
             I Agree
           </button>

@@ -64,24 +64,24 @@ const Hero: React.FC = () => {
               <img 
                 src="https://img1.wsimg.com/isteam/ip/9fd6d942-5b46-4025-92e2-0f1ec2a7adf2/a-photo-of-a-ufo-hovering-in-the-sky-wit_w8l4l.png/:/cr=t:5.43%25,l:0%25,w:100%25,h:89.13%25/rs=w:1200,h:600,cg:true" 
                 alt="UFO hovering in the night sky" 
-                className="rounded-2xl border border-white/10 shadow-neon-cyan w-full max-h-[300px] object-cover object-center"
+                className="rounded-2xl border border-white/10 shadow-neon-cyan w-full max-h-[200px] sm:max-h-[300px] object-cover object-center"
               />
               <div className="absolute inset-0 rounded-2xl border border-neon-cyan/20 shadow-neon-cyan opacity-50"></div>
             </div>
             
             {/* Tag line */}
-            <div className="inline-block mb-6 py-1 px-3 bg-white/5 backdrop-blur-sm rounded-full border border-white/10">
-              <span className="text-sm text-gradient-rainbow font-medium">Unveil the unexplained with AI precision</span>
+            <div className="inline-block mb-4 sm:mb-6 py-1 px-3 bg-white/5 backdrop-blur-sm rounded-full border border-white/10">
+              <span className="text-xs sm:text-sm text-gradient-rainbow font-medium">Unveil the unexplained with AI precision</span>
             </div>
             
             {/* Title */}
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 tracking-tight">
               <span className="block">Phenomenon Explorer</span>
               <span className="text-gradient-rainbow">AI Suite</span>
             </h1>
             
             {/* Description */}
-            <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+            <p className="text-sm sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-10 max-w-2xl mx-auto">
               Harness the power of specialized AI to investigate the unexplained - from UFO encounters to supernatural phenomena, cryptozoology to ghost hunting.
             </p>
             
