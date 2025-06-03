@@ -15,20 +15,20 @@ const Index = () => {
     // Welcome toast
     setTimeout(() => {
       toast({
-        title: "Welcome to Phenomenon Explorer AI Suite",
-        description: "Explore our four specialized AI tools designed to investigate the unexplained.",
+        title: "Welcome to AIWEBTOOLS.AI Phenomenon Explorer",
+        description: "Explore our four specialized free AI tools designed to investigate the unexplained.",
         duration: 5000,
       });
     }, 1500);
     
     // Change page title
-    document.title = "Phenomenon Explorer AI Suite | AiWebTools.Ai";
+    document.title = "Free AI Tools for Paranormal Investigation | UFO, Ghost Hunting GPT | AIWEBTOOLS.AI";
   }, []);
   
   const tools = [
     {
       title: "UFO Investigation GPT",
-      description: "A comprehensive investigator providing tailored support for UFO case investigations, legal inquiries, and hypothetical defense strategies.",
+      description: "Advanced free AI tool providing comprehensive UFO case investigation support, evidence analysis, and structured reporting for researchers and enthusiasts.",
       iconPath: "M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z",
       gradient: "bg-tool-gradient-1",
       borderColor: "neon-cyan",
@@ -38,7 +38,7 @@ const Index = () => {
     },
     {
       title: "Supernatural Myths GPT",
-      description: "Analyzes supernatural claims by cross-referencing historical records, scientific principles, and factual evidence across different cultures and time periods.",
+      description: "Free AI tool that analyzes supernatural claims by cross-referencing historical records, scientific principles, and cultural evidence across different time periods.",
       iconPath: "M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z",
       gradient: "bg-tool-gradient-2",
       borderColor: "neon-magenta",
@@ -48,7 +48,7 @@ const Index = () => {
     },
     {
       title: "Cryptozoology Report GPT",
-      description: "A documentation assistant offering structured reports for cryptid sightings with in-depth research, evidence analysis, and case management.",
+      description: "Specialized free AI documentation assistant offering structured reports for cryptid sightings with in-depth research, evidence analysis, and case management.",
       iconPath: "M15.75 15.75l-2.489-2.489m0 0a3.375 3.375 0 10-4.773-4.773 3.375 3.375 0 004.774 4.774zM21 12a9 9 0 11-18 0 9 9 0 0118 0z",
       gradient: "bg-tool-gradient-3",
       borderColor: "neon-purple",
@@ -58,7 +58,7 @@ const Index = () => {
     },
     {
       title: "Ghost Hunting GPT 👻",
-      description: "Guides users through structured methodologies to investigate paranormal activity with tools, best practices, and data analysis.",
+      description: "Free AI tool that guides users through structured methodologies to investigate paranormal activity with professional tools, best practices, and data analysis.",
       iconPath: "M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z",
       gradient: "bg-tool-gradient-4",
       borderColor: "neon-blue",
@@ -71,10 +71,14 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <meta name="description" content="Phenomenon Explorer AI Suite - Advanced AI tools for investigating UFOs, supernatural myths, cryptids, and paranormal activity." />
-        <meta property="og:title" content="Phenomenon Explorer AI Suite | AiWebTools.Ai" />
-        <meta property="og:description" content="Harness the power of specialized AI to investigate the unexplained - from UFO encounters to supernatural phenomena." />
+        <title>Free AI Tools for Paranormal Investigation | UFO, Ghost Hunting, Cryptozoology GPT | AIWEBTOOLS.AI</title>
+        <meta name="description" content="Discover powerful free AI tools from AIWEBTOOLS.AI for paranormal investigation. Advanced GPT tools for UFO research, ghost hunting, supernatural myths analysis & cryptozoology reports. Start investigating now!" />
+        <meta name="keywords" content="free ai tools, ai tools, aiwebtools, ai web tools, paranormal investigation ai, ufo investigation gpt, ghost hunting ai, cryptozoology ai, supernatural analysis ai, free gpt tools, paranormal research tools" />
+        <meta property="og:title" content="Free AI Tools for Paranormal Investigation | AIWEBTOOLS.AI" />
+        <meta property="og:description" content="Discover powerful free AI tools for paranormal investigation. Advanced GPT tools for UFO research, ghost hunting, supernatural myths analysis & cryptozoology reports from AIWEBTOOLS.AI" />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://phenomenon-explorer.lovable.app/" />
+        <link rel="canonical" href="https://phenomenon-explorer.lovable.app/" />
       </Helmet>
       
       <StarField />
@@ -88,13 +92,13 @@ const Index = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <div className="inline-block mb-4 py-1 px-3 bg-white/5 backdrop-blur-sm rounded-full border border-white/10">
-                <span className="text-sm text-white font-medium">Four specialized AI tools</span>
+                <span className="text-sm text-white font-medium">Four specialized free AI tools from AIWEBTOOLS.AI</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Explore the <span className="text-gradient-rainbow">Unexplained</span>
+                Explore the <span className="text-gradient-rainbow">Unexplained</span> with Free AI Tools
               </h2>
               <p className="text-gray-300 max-w-2xl mx-auto">
-                Our AI suite provides specialized tools for investigating various paranormal and unexplained phenomena with scientific precision and analytical depth.
+                Our free AI tools suite provides specialized GPT applications for investigating various paranormal and unexplained phenomena with scientific precision and analytical depth. Powered by AIWEBTOOLS.AI advanced technology.
               </p>
             </div>
             
@@ -125,10 +129,10 @@ const Index = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <div className="inline-block mb-4 py-1 px-3 bg-white/5 backdrop-blur-sm rounded-full border border-white/10">
-                <span className="text-sm text-white font-medium">User experiences</span>
+                <span className="text-sm text-white font-medium">User experiences with our free AI tools</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                What <span className="text-gradient-rainbow">Explorers</span> Say
+                What <span className="text-gradient-rainbow">Investigators</span> Say About Our Free AI Tools
               </h2>
             </div>
             
@@ -147,7 +151,7 @@ const Index = () => {
                   </div>
                 </div>
                 <p className="text-gray-300">
-                  "UFO Investigation GPT changed how I document sightings. The structured format and analytical capabilities help me present cases with much more credibility and detail than ever before."
+                  "AIWEBTOOLS.AI's UFO Investigation GPT changed how I document sightings. This free AI tool's structured format and analytical capabilities help me present cases with much more credibility and detail than ever before."
                 </p>
                 <div className="mt-4 flex">
                   {[1, 2, 3, 4, 5].map((star) => (
@@ -172,7 +176,7 @@ const Index = () => {
                   </div>
                 </div>
                 <p className="text-gray-300">
-                  "Ghost Hunting GPT is like having an expert partner during investigations. The tools analysis and historical context have helped me understand patterns I would have missed otherwise."
+                  "Ghost Hunting GPT from AIWEBTOOLS.AI is like having an expert partner during investigations. This free AI tool's analysis and historical context have helped me understand patterns I would have missed otherwise."
                 </p>
                 <div className="mt-4 flex">
                   {[1, 2, 3, 4, 5].map((star) => (
@@ -197,7 +201,7 @@ const Index = () => {
                   </div>
                 </div>
                 <p className="text-gray-300">
-                  "Supernatural Myths GPT has been invaluable for my research. The ability to cross-reference historical accounts and analyze cultural patterns has added depth to my work on folklore origins."
+                  "Supernatural Myths GPT has been invaluable for my research. The ability to cross-reference historical accounts and analyze cultural patterns has added depth to my work on folklore origins. Best free AI tool for this purpose!"
                 </p>
                 <div className="mt-4 flex">
                   {[1, 2, 3, 4, 5].map((star, index) => (
@@ -216,13 +220,13 @@ const Index = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <div className="inline-block mb-4 py-1 px-3 bg-white/5 backdrop-blur-sm rounded-full border border-white/10">
-                <span className="text-sm text-white font-medium">Simple process</span>
+                <span className="text-sm text-white font-medium">Simple process with free AI tools</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                How It <span className="text-gradient-rainbow">Works</span>
+                How Our Free AI Tools <span className="text-gradient-rainbow">Work</span>
               </h2>
               <p className="text-gray-300 max-w-2xl mx-auto">
-                Our AI tools are designed to be intuitive and effective, guiding you through investigations of unexplained phenomena step by step.
+                AIWEBTOOLS.AI free AI tools are designed to be intuitive and effective, guiding you through investigations of unexplained phenomena step by step with advanced GPT technology.
               </p>
             </div>
             
@@ -236,9 +240,9 @@ const Index = () => {
                   1
                 </div>
                 <div className="pt-6">
-                  <h3 className="text-xl font-bold text-white mb-4">Choose Your Tool</h3>
+                  <h3 className="text-xl font-bold text-white mb-4">Choose Your Free AI Tool</h3>
                   <p className="text-gray-300">
-                    Select the specialized AI tool that matches your area of interest - UFOs, supernatural myths, cryptozoology, or ghost hunting.
+                    Select the specialized free AI tool that matches your area of interest - UFOs, supernatural myths, cryptozoology, or ghost hunting from our AIWEBTOOLS.AI suite.
                   </p>
                 </div>
               </div>
@@ -251,7 +255,7 @@ const Index = () => {
                 <div className="pt-6">
                   <h3 className="text-xl font-bold text-white mb-4">Share Your Case</h3>
                   <p className="text-gray-300">
-                    Provide details, evidence, or questions about your phenomenon of interest. The more information you share, the better the analysis.
+                    Provide details, evidence, or questions about your phenomenon of interest. The more information you share with our free AI tools, the better the analysis.
                   </p>
                 </div>
               </div>
@@ -262,9 +266,9 @@ const Index = () => {
                   3
                 </div>
                 <div className="pt-6">
-                  <h3 className="text-xl font-bold text-white mb-4">Get Expert Analysis</h3>
+                  <h3 className="text-xl font-bold text-white mb-4">Get Expert AI Analysis</h3>
                   <p className="text-gray-300">
-                    Receive structured reports, analyses, and insights based on the latest methodologies in paranormal investigation and research.
+                    Receive structured reports, analyses, and insights based on the latest methodologies in paranormal investigation and research from our advanced free AI tools.
                   </p>
                 </div>
               </div>

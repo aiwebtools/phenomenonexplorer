@@ -63,7 +63,7 @@ const Hero: React.FC = () => {
             <div className="relative mb-8 max-w-2xl mx-auto">
               <img 
                 src="https://img1.wsimg.com/isteam/ip/9fd6d942-5b46-4025-92e2-0f1ec2a7adf2/a-photo-of-a-ufo-hovering-in-the-sky-wit_w8l4l.png/:/cr=t:5.43%25,l:0%25,w:100%25,h:89.13%25/rs=w:1200,h:600,cg:true" 
-                alt="UFO hovering in the night sky" 
+                alt="Free AI tools for UFO investigation and paranormal research - AIWEBTOOLS.AI" 
                 className="rounded-2xl border border-white/10 shadow-neon-cyan w-full max-h-[200px] sm:max-h-[300px] object-cover object-center"
               />
               <div className="absolute inset-0 rounded-2xl border border-neon-cyan/20 shadow-neon-cyan opacity-50"></div>
@@ -71,18 +71,19 @@ const Hero: React.FC = () => {
             
             {/* Tag line */}
             <div className="inline-block mb-4 sm:mb-6 py-1 px-3 bg-white/5 backdrop-blur-sm rounded-full border border-white/10">
-              <span className="text-xs sm:text-sm text-gradient-rainbow font-medium">Unveil the unexplained with AI precision</span>
+              <span className="text-xs sm:text-sm text-gradient-rainbow font-medium">Unveil the unexplained with free AI tools precision</span>
             </div>
             
             {/* Title */}
             <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 tracking-tight">
-              <span className="block">Phenomenon Explorer</span>
-              <span className="text-gradient-rainbow">AI Suite</span>
+              <span className="block">Free AI Tools for</span>
+              <span className="block">Phenomenon Investigation</span>
+              <span className="text-gradient-rainbow">by AIWEBTOOLS.AI</span>
             </h1>
             
             {/* Description */}
             <p className="text-sm sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-10 max-w-2xl mx-auto">
-              Harness the power of specialized AI to investigate the unexplained - from UFO encounters to supernatural phenomena, cryptozoology to ghost hunting.
+              Harness the power of specialized free AI tools to investigate the unexplained - from UFO encounters to supernatural phenomena, cryptozoology to ghost hunting. Advanced GPT technology at your fingertips.
             </p>
             
             {/* Button group */}
@@ -91,10 +92,10 @@ const Hero: React.FC = () => {
                 dropdown={true} 
                 dropdownItems={toolItems} 
                 color="cyan">
-                Start Exploring
+                Start Using Free AI Tools
               </GlowingButton>
               <GlowingButton href="https://aiwebtools.ai" color="magenta">
-                View All AIWEBTOOLS AI TOOLS
+                Explore More Free AI Tools
               </GlowingButton>
             </div>
           </div>
@@ -102,7 +103,7 @@ const Hero: React.FC = () => {
         
         {/* Scroll indicator */}
         <div className={`absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center opacity-0 ${isVisible ? 'opacity-100' : ''} transition-opacity duration-1000 delay-1000`}>
-          <p className="text-sm text-gray-400 mb-2">Scroll to explore</p>
+          <p className="text-sm text-gray-400 mb-2">Scroll to explore our free AI tools</p>
           <div className="w-6 h-10 rounded-full border border-gray-500 flex justify-center p-1">
             <div className="w-1 h-2 bg-white rounded-full animate-[float_1.5s_ease-in-out_infinite]"></div>
           </div>
