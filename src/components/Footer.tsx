@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
               Advanced AI tools for investigating the unexplained and documenting paranormal phenomena.
             </p>
             <div className="absolute bottom-4 right-4 md:relative md:bottom-auto md:right-auto">
-              <GlowingButton href="http://www.aiwebtools.ai" className="rounded-full">
+              <GlowingButton href="https://aiwebtools.lovable.app/?via=aiwebtools" className="rounded-full">
                 More AI Tools
               </GlowingButton>
             </div>
@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="https://aiwebtools.ai/terms-of-services" className="text-gray-400 hover:text-white transition-colors duration-300">
+                <a href="https://aiwebtools.lovable.app/?via=aiwebtools" className="text-gray-400 hover:text-white transition-colors duration-300">
                   Terms of Service
                 </a>
               </li>
@@ -110,14 +110,14 @@ const Footer: React.FC = () => {
         
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © 2025 <a href="http://www.aiwebtools.ai" className="hover:text-white transition-colors duration-300">AI WEB TOOLS LLC</a> All rights reserved.
+            © 2025 <a href="https://aiwebtools.lovable.app/?via=aiwebtools" className="hover:text-white transition-colors duration-300">AI WEB TOOLS LLC</a> All rights reserved.
           </p>
           
           <div className="flex gap-6">
             <a href="https://openai.com/policies/privacy-policy/" className="text-gray-400 text-sm hover:text-white transition-colors duration-300">
               Privacy Policy
             </a>
-            <a href="https://aiwebtools.ai/terms-of-services" className="text-gray-400 text-sm hover:text-white transition-colors duration-300">
+            <a href="https://aiwebtools.lovable.app/?via=aiwebtools" className="text-gray-400 text-sm hover:text-white transition-colors duration-300">
               Terms of Service
             </a>
           </div>

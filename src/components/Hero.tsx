@@ -94,7 +94,7 @@ const Hero: React.FC = () => {
                 color="cyan">
                 Start Using Free AI Tools
               </GlowingButton>
-              <GlowingButton href="https://aiwebtools.ai" color="magenta">
+              <GlowingButton href="https://aiwebtools.lovable.app/?via=aiwebtools" color="magenta">
                 Explore More Free AI Tools
               </GlowingButton>
             </div>

@@ -116,7 +116,7 @@ const GlowingButton: React.FC<GlowingButtonProps> = ({
         
         {isDropdownOpen && (
           <div 
-            className="absolute z-[100] left-0 right-0 mt-2 w-64 rounded-xl border backdrop-blur-xl bg-black/95 border-white/20 shadow-lg shadow-neon-cyan/30 overflow-hidden"
+            className="absolute z-[100] left-0 mt-2 w-64 max-w-[90vw] rounded-xl border backdrop-blur-xl bg-black/95 border-white/20 shadow-lg shadow-neon-cyan/30 overflow-hidden"
             style={{ position: 'absolute', top: '100%' }}
           >
             <div className="py-1">
@@ -126,9 +126,9 @@ const GlowingButton: React.FC<GlowingButtonProps> = ({
                   href={item.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`block px-4 py-3 hover:bg-white/20 ${styles.text} transition-colors duration-200`}
+                  className={`block px-4 py-3 hover:bg-white/20 active:bg-white/30 ${styles.text} transition-colors duration-150 touch-manipulation`}
                 >
-                  <span>{item.label}</span>
+                  <span className="text-sm sm:text-base">{item.label}</span>
                 </a>
               ))}
             </div>
