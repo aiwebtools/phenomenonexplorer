@@ -41,7 +41,7 @@ const Header: React.FC = () => {
           <div className="flex flex-col items-start">
             <span className="font-bold text-lg text-white">Phenomenon Explorer</span>
             <span className="text-xs text-gray-400 -mt-1 group-hover:text-gradient-rainbow transition-all duration-300">
-              Presented by <a href="http://www.aiwebtools.ai" className="underline">AiWebTools.Ai</a>
+              Presented by <a href="https://aiwebtools.lovable.app/?via=aiwebtools" className="underline">AiWebTools.Ai</a>
             </span>
           </div>
         </a>

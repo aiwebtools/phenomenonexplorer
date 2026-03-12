@@ -117,7 +117,7 @@ const Footer: React.FC = () => {
             <a href="https://openai.com/policies/privacy-policy/" className="text-gray-400 text-sm hover:text-white transition-colors duration-300">
               Privacy Policy
             </a>
-            <a href="https://aiwebtools.ai/terms-of-services" className="text-gray-400 text-sm hover:text-white transition-colors duration-300">
+            <a href="https://aiwebtools.lovable.app/?via=aiwebtools" className="text-gray-400 text-sm hover:text-white transition-colors duration-300">
               Terms of Service
             </a>
           </div>
