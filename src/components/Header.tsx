@@ -84,7 +84,7 @@ const Header: React.FC = () => {
           >
             Disclaimer
           </a>
-          <GlowingButton href="http://www.aiwebtools.ai" color="cyan">
+          <GlowingButton href="https://aiwebtools.lovable.app/?via=aiwebtools" color="cyan">
             More AI Tools
           </GlowingButton>
         </nav>
