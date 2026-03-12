@@ -47,7 +47,7 @@ const Header: React.FC = () => {
         </a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden lg:flex items-center gap-4 xl:gap-6">
           <a
             href="https://chatgpt.com/g/g-67cdc7fe2fdc8191bf47c5e4ec78528b-ufo-investigation-gpt"
             className="text-gray-300 hover:text-neon-cyan transition-colors duration-300"
