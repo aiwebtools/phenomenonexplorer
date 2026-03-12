@@ -16,7 +16,7 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
         className="w-full py-6 flex justify-between items-center text-left" 
         onClick={() => setIsOpen(!isOpen)}
       >
-        <h3 className="text-xl font-medium text-white">{question}</h3>
+        <h3 className="text-base sm:text-lg md:text-xl font-medium text-white pr-4">{question}</h3>
         <span className={cn(
           "text-white transform transition-transform duration-300", 
           isOpen ? "rotate-45" : ""
