@@ -126,9 +126,9 @@ const GlowingButton: React.FC<GlowingButtonProps> = ({
                   href={item.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`block px-4 py-3 hover:bg-white/20 ${styles.text} transition-colors duration-200`}
+                  className={`block px-4 py-3 hover:bg-white/20 active:bg-white/30 ${styles.text} transition-colors duration-150 touch-manipulation`}
                 >
-                  <span>{item.label}</span>
+                  <span className="text-sm sm:text-base">{item.label}</span>
                 </a>
               ))}
             </div>

@@ -91,15 +91,16 @@ const Header: React.FC = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-white p-2"
+          className="md:hidden text-white p-3 -mr-2 touch-manipulation"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Toggle menu"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
-            className="w-6 h-6"
+            className="w-7 h-7"
           >
             {mobileMenuOpen ? (
               <path
@@ -121,52 +122,72 @@ const Header: React.FC = () => {
       </div>
 
       {/* Mobile Menu */}
-      {mobileMenuOpen && (
-        <div className="md:hidden glass-morphism border-t border-white/10 py-4 animate-fadeIn">
-          <nav className="container mx-auto px-4 flex flex-col gap-4">
-            <a
-              href="https://chatgpt.com/g/g-67cdc7fe2fdc8191bf47c5e4ec78528b-ufo-investigation-gpt"
-              className="text-gray-300 hover:text-neon-cyan py-2 transition-colors duration-300"
-            >
-              UFO Investigation GPT
-            </a>
-            <a
-              href="https://chatgpt.com/g/g-67cdc3f657648191b1865eb62651d278-supernatural-myths-gpt"
-              className="text-gray-300 hover:text-neon-magenta py-2 transition-colors duration-300"
-            >
-              Supernatural Myths GPT
-            </a>
-            <a
-              href="https://chatgpt.com/g/g-67cdbfacd8a481918cb2f50a0aabd34a-cryptozoology-report-gpt"
-              className="text-gray-300 hover:text-neon-purple py-2 transition-colors duration-300"
-            >
-              Cryptozoology Report GPT
-            </a>
-            <a
-              href="https://chatgpt.com/g/g-67cdbca3ed408191b888c9c93a23776a-ghost-hunting-gpt"
-              className="text-gray-300 hover:text-neon-blue py-2 transition-colors duration-300"
-            >
-              Ghost Hunting GPT 👻
-            </a>
-            <a
-              href="#faq"
-              className="text-gray-300 hover:text-white py-2 transition-colors duration-300"
-            >
-              FAQ
-            </a>
-            <a
-              href="#disclaimer"
-              className="text-gray-300 hover:text-white py-2 transition-colors duration-300"
-            >
-              Disclaimer
-            </a>
-            <GlowingButton href="https://aiwebtools.lovable.app/?via=aiwebtools" color="cyan" className="mt-2">
+      <div 
+        className={cn(
+          "md:hidden overflow-hidden transition-all duration-300 ease-in-out",
+          mobileMenuOpen 
+            ? "max-h-[80vh] opacity-100 border-t border-white/10" 
+            : "max-h-0 opacity-0"
+        )}
+      >
+        <nav className="bg-space-dark/95 backdrop-blur-xl px-4 py-4 flex flex-col gap-1">
+          <a
+            href="https://chatgpt.com/g/g-67cdc7fe2fdc8191bf47c5e4ec78528b-ufo-investigation-gpt"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setMobileMenuOpen(false)}
+            className="text-gray-300 hover:text-neon-cyan active:text-neon-cyan py-3 px-3 rounded-lg hover:bg-white/5 active:bg-white/10 transition-all duration-150 touch-manipulation text-base"
+          >
+            UFO Investigation GPT
+          </a>
+          <a
+            href="https://chatgpt.com/g/g-67cdc3f657648191b1865eb62651d278-supernatural-myths-gpt"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setMobileMenuOpen(false)}
+            className="text-gray-300 hover:text-neon-magenta active:text-neon-magenta py-3 px-3 rounded-lg hover:bg-white/5 active:bg-white/10 transition-all duration-150 touch-manipulation text-base"
+          >
+            Supernatural Myths GPT
+          </a>
+          <a
+            href="https://chatgpt.com/g/g-67cdbfacd8a481918cb2f50a0aabd34a-cryptozoology-report-gpt"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setMobileMenuOpen(false)}
+            className="text-gray-300 hover:text-neon-purple active:text-neon-purple py-3 px-3 rounded-lg hover:bg-white/5 active:bg-white/10 transition-all duration-150 touch-manipulation text-base"
+          >
+            Cryptozoology Report GPT
+          </a>
+          <a
+            href="https://chatgpt.com/g/g-67cdbca3ed408191b888c9c93a23776a-ghost-hunting-gpt"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setMobileMenuOpen(false)}
+            className="text-gray-300 hover:text-neon-blue active:text-neon-blue py-3 px-3 rounded-lg hover:bg-white/5 active:bg-white/10 transition-all duration-150 touch-manipulation text-base"
+          >
+            Ghost Hunting GPT 👻
+          </a>
+          <a
+            href="#faq"
+            onClick={() => setMobileMenuOpen(false)}
+            className="text-gray-300 hover:text-white active:text-white py-3 px-3 rounded-lg hover:bg-white/5 active:bg-white/10 transition-all duration-150 touch-manipulation text-base"
+          >
+            FAQ
+          </a>
+          <a
+            href="#disclaimer"
+            onClick={() => setMobileMenuOpen(false)}
+            className="text-gray-300 hover:text-white active:text-white py-3 px-3 rounded-lg hover:bg-white/5 active:bg-white/10 transition-all duration-150 touch-manipulation text-base"
+          >
+            Disclaimer
+          </a>
+          <div className="pt-2 pb-1 px-3">
+            <GlowingButton href="https://aiwebtools.lovable.app/?via=aiwebtools" color="cyan" className="w-full text-center">
               More AI Tools
             </GlowingButton>
-          </nav>
-        </div>
-      )}
-    </header>
+          </div>
+        </nav>
+      </div>
   );
 };
 
