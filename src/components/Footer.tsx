@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
               Advanced AI tools for investigating the unexplained and documenting paranormal phenomena.
             </p>
             <div className="absolute bottom-4 right-4 md:relative md:bottom-auto md:right-auto">
-              <GlowingButton href="http://www.aiwebtools.ai" className="rounded-full">
+              <GlowingButton href="https://aiwebtools.lovable.app/?via=aiwebtools" className="rounded-full">
                 More AI Tools
               </GlowingButton>
             </div>
