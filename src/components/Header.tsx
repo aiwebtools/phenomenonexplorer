@@ -124,7 +124,7 @@ const Header: React.FC = () => {
       {/* Mobile Menu */}
       <div 
         className={cn(
-          "md:hidden overflow-hidden transition-all duration-300 ease-in-out",
+          "lg:hidden overflow-hidden transition-all duration-300 ease-in-out",
           mobileMenuOpen 
             ? "max-h-[80vh] opacity-100 border-t border-white/10" 
             : "max-h-0 opacity-0"
