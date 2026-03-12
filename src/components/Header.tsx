@@ -91,7 +91,7 @@ const Header: React.FC = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-white p-3 -mr-2 touch-manipulation"
+          className="lg:hidden text-white p-3 -mr-2 touch-manipulation"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"
         >
